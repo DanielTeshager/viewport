@@ -46,25 +46,29 @@ a{
     color: var(--basic-black);
     text-transform: uppercase;
     font-size: .8rem;
+    cursor: pointer;
 }
 a:hover{
     color: var(--basic-gray);
     text-transform: uppercase;
     font-size: .8rem;
 }
-
+button, .btn{
+    cursor: pointer;
+}
 .btn-primary{
     border: none;
     padding: 1rem 1rem;
     background: var(--basic-black);
     color: white;
+    cursor: pointer;
 }
 
 /* header */
 header{
     padding: 1rem 0;
 }
-.logo .logo-title a{
+.logo-title a{
     font-size: 2rem;
     text-transform: none;
 }
@@ -146,4 +150,150 @@ main{
 .third-img{
     grid-column:  2 / 4;
     background-image: url('../assets/home/desktop/designed-for-everyone.jpg'); 
+}
+.third-text button, .sec-text button{
+    background-color: white;
+    color: black;
+}
+/* cards */
+.img-cards{
+    grid-column: 1 / 5;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    min-height: 20rem;
+}
+.img-card-content{
+    background: linear-gradient(358deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 92%);
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    color: white;
+    gap: 1rem;
+    height: 100%;
+    padding: 0 2rem;
+}
+.img-cards .img-card{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 20rem;
+   
+}
+.img-card hr {
+    border: none;
+    height: 1px;
+    /* Set the hr color */
+    color: #979797; /* old IE */
+    background-color: #979797; /* Modern Browsers */
+}
+.img-card .img-card-footer{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 1rem;
+    cursor: pointer;
+}
+.img-card .img-card-footer:hover{
+  cursor: pointer;
+}
+.img-cards .img-card:nth-child(1){
+    background-image: url('../assets/stories/desktop/mountains.jpg');
+}
+.img-cards .img-card:nth-child(2){
+    background-image: url('../assets/stories/desktop/behind-the-waves.jpg');
+}
+.img-cards .img-card:nth-child(3){
+    background-image: url('../assets/stories/desktop/architecturals.jpg');
+}
+.img-cards .img-card:nth-child(4){
+    background-image: url('../assets/stories/desktop/cityscapes.jpg');
+}
+
+/* features */
+.features{
+    grid-column: 1 / 5;
+    padding: 4rem 0;
+    min-height: 20rem;
+}
+
+.features-cards{
+    display: grid;   
+    grid-template-columns: repeat(3, 1fr);
+}
+.features-card-header{
+    line-height: 8.15rem;
+    margin-bottom: -3rem;
+}
+.features-cards .features-card-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 1.5rem 2.5rem;
+}
+.features-card-content p.features-card-text{
+    font-size: .8rem;
+    text-align: center;
+    color: gray
+}
+/* footer */
+
+footer{
+    grid-column: 1 / 5;
+    background-color: #000000;
+    color: white;
+}
+.left-footer{
+    display: grid;
+    grid-template-columns: repeat(2, 10rem);
+}
+.left-footer .social-media{
+    grid-column: 1 / 2;
+    grid-row: 2 /3;
+    align-self: end;
+}
+.left-footer .social-media .social-icons{
+    display: flex;
+    gap: 1rem;
+    grid-column: 1 / 2;
+}
+.left-footer nav{
+    grid-column: 2 / 3;
+    grid-row: 1 / 3;
+}
+.footer-nav{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-left: 5rem;
+}
+.footer-nav li a{
+    color: white;
+}
+footer .container{
+    display: flex;
+    justify-content: space-between;
+    padding: 4rem 0 2rem 0;
+}
+.right-footer{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: space-between;
+}
+.right-footer button{
+    padding: 0;
+    text-transform: uppercase;
+}
+.right-footer button span{
+    padding-left: 1rem;
+}
+.copyright p{
+    color: #aeaeae
+}
+footer .logo-title{
+    cursor: pointer;
+}
+footer .logo-title a{
+    color: white;
+    cursor: pointer;
 }
