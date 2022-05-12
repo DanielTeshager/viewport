@@ -89,6 +89,15 @@ main{
 .tile{
     min-height: 30rem;
 }
+.highlight::before{
+    content: '';
+    position: absolute;
+    top: 25%;
+    left: 0;
+    height: 30%;
+    width: .5rem;
+    background: linear-gradient(21deg, rgba(255,197,147,1) 0%, rgba(188,113,152,1) 38%, rgba(90,119,255,1) 92%);
+}
 .text-container{
     display: flex;
     flex-direction: column;

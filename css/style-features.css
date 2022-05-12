@@ -1,0 +1,44 @@
+.tile-title{
+    font-size: 1.5rem !important;
+}
+.tile{
+    min-height: 20rem;
+}
+.image-container{
+    background-image: url('../assets/features/desktop/hero.jpg') !important;
+}
+
+.features-footer{
+    background-image: url(../assets/shared/desktop/bg-beta.jpg);
+    min-height: 15rem;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.features-footer-content{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: baseline;
+}
+
+.features-footer-content .features-footer-title{
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    width: 12ch;
+}
+
+.features-footer-content .features-button{
+    background: none;
+}
+
+.highlight::before{
+    content: '';
+    position: absolute;
+    top: 20%;
+    left: 0;
+    height: 30%;
+    width: .5rem;
+    background: linear-gradient(21deg, rgba(255,197,147,1) 0%, rgba(188,113,152,1) 38%, rgba(90,119,255,1) 92%);
+}
