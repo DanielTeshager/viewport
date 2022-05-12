@@ -1,0 +1,61 @@
+.tile-title{
+    font-size: 2.5rem !important;
+    width: 10ch !important;
+}
+.tile{
+    min-height: 30rem;
+}
+
+.highlight{
+    background-image: url('../assets/stories//desktop/moon-of-appalacia.jpg') !important;
+    grid-column: 1 / 5;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.text-container{
+    grid-column: 1 / 2;
+    background: none;
+}
+.text-content {
+    color: var(--basic-gray);
+    font-size: .8rem;
+    width: 40ch;
+    line-height: 1.5;
+  }
+.highlight::before{
+    content: '';
+    display: none;
+}
+.text-container button{
+    background: none;
+}
+.text-container span{
+    font-size: .8rem;
+}
+
+.cards-row1 .img-card:nth-child(1){
+    background-image: url('../assets/stories/desktop/18-days-voyage.jpg');
+}
+.cards-row1 .img-card:nth-child(2){
+    background-image: url('../assets/stories/desktop/king-on-africa.jpg');
+}
+.cards-row1 .img-card:nth-child(3){
+    background-image: url('../assets/stories/desktop/land-of-dreams.jpg');
+}
+.cards-row1 .img-card:nth-child(4){
+    background-image: url('../assets/stories/desktop/dark-forest.jpg');
+}
+
+.cards-row3 .img-card:nth-child(1){
+    background-image: url('../assets/stories/desktop/milky-way.jpg');
+}
+.cards-row3 .img-card:nth-child(2){
+    background-image: url('../assets/stories/desktop/moon-of-appalacia.jpg');
+}
+.cards-row3 .img-card:nth-child(3){
+    background-image: url('../assets/stories/desktop/world-tour.jpg');
+}
+.cards-row3 .img-card:nth-child(4){
+    background-image: url('../assets/stories/desktop/somwarpet.jpg');
+}
+

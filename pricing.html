@@ -3,74 +3,343 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Photosnap Website Challenge</title>
+  <!-- <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png"> -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<!-- import bootstrap cdn -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<!-- import font awesome cdn -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="./css/style.css"> 
+  <link rel="stylesheet" href="./css/style-pricing.css">
+  <title>Viewport | Photographers</title>
 </head>
 <body>
 
-  Stories
-  Features
-  Pricing
+<header>
+  <div class="container header-content">
+    <div class="logo">
+      <h2 class="logo-title">
+        <a href="index.html">Viewport</a>
+      </h2>
+    </div>
+    <!-- end logo -->
+    <nav>
+      <ul class="nav-list">
+        <li class="nav-item">
+          <a href="stories.html">Stories</a>
+          </li>
+          <li class="nav-item">
+          <a href="features.html">Features</a>
+          </li>
+          <li class="nav-item">
+          <a href="pricing.html">Pricing</a>
+          </li>
+    </nav>
+    <!-- end nav-->
+    <button class="btn btn-primary">GET INVITED</button>
+  </div>
+</header>
+<!-- end header -->
+<main>
+  <div class="highlight">
+    <div class="tile text-container">
+      <h2 class="tile-title">
+        PRICING
+      </h2>
+      <p class="text-content">
+        Create a your stories, Photosnap is a platform for photographers and visual storytellers. It’s the simple way to create and share your photos.
+      </p>
+    </div>
+  </div>
+  <div class="tile image-container"></div>
+  <!-- end text tile -->
 
-  Get an invite
+<!-- end of hero -->
 
-  Pricing
+<div class="billing-cycle">
+  <p class="billing-cycle-title">
+    Monthly Billing 
+  </p>
+  <!-- toggle switch monthly vs yearly -->
+    <div class="toggle-switch">
+      <input type="checkbox" id="switch"
+      class="checkbox" />
+      <label for="switch" class="toggle">
+      </label>
+    </div>
+      <span class="toggle-switch-slider">Yearly Billing</span>
+      <span class="discount">-20%</span>
+  </div>
+      <!-- end billing cycle -->
+  <div class="price-cards container">
+    <div class="price-card">
+      <div class="price-card-header">
+        <h3 class="price-card-title">
+          Basic
+        </h3>
+      </div>
+        <p class="price-card-text">
+          Includes basic usage of our platform. Recommended for new and aspiring photographers.
+        </p>
+        <h3 class="price">
+          $9.99 
+          <span class="term">per month</span>
+        </h3>
+        <button class="btn btn-primary">PICK PLAN</button>
+      </div>
+      <div class="price-card main">
+        <div class="price-card-header">
+          <h3 class="price-card-title">
+            Pro
+          </h3>
+        </div>
+          <p class="price-card-text">
+            More advanced features available. Recommended for photography veterans and professionals.
+          </p>
+          <h3 class="price">
+            $39.00
+            <span class="term">per month</span>
+          </h3>
+          <button class="btn btn-primary">PICK PLAN</button>
+      </div>
+      
+      <div class="price-card">
+        <div class="price-card-header">
+          <h3 class="price-card-title">
+            Business
+          </h3>
+        </div>
+          <p class="price-card-text">
+            Additional features available such as more detailed metrics. Recommended for business owners.
+          </p>
+          <h3 class="price">
+            $99.00 
+            <span class="term">per month</span>
+          </h3>
+          <button class="btn btn-primary">PICK PLAN</button>
+        </div>
+  </div>
+<!-- price table -->
+<div class="price-comparison container">
+  <h3 class="price-comparison-title">
+    Compare
+  </h3>
+  <table class="price-comparison-table">
+    <thead>
+      <tr>
+        <th>
+          Features
+        </th>
+        <th>
+          Basic
+        </th>
+        <th>
+          &nbsp;
+          Pro
+          &nbsp;
+        </th>
+        <th>
+          Business
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>
+          UNLIMITED STORY POSTING
+        </td>
+        <td>
+          <i class="fa fa-check"></i>
+          </td>
+          <td>
+            <i class="fa fa-check"></i>
+            </td>
+            <td>
+              <i class="fa fa-check"></i>
+              </td>
+          </tr>
+          <tr>
+            <td>
+              UNLIMITED PHOTO UPLOAD
+            </td>
+            <td>
+              <i class="fa fa-check"></i>
+              </td>
+              <td>
+                <i class="fa fa-check"></i>
+                </td>
+                <td>
+                  <i class="fa fa-check"></i>
+                  </td>
+              </tr>
+              <tr>
+                <td>
+                  EMBEDDING CUSTOM CONTENT
+                </td>
+                <td>
+                  </td>
+                  <td>
+                    <i class="fa fa-check"></i>
+                    </td>
+                    <td>
+                      <i class="fa fa-check"></i>
+                      </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      CUSTOMIZE METADATA                    
+                    </td>
+                    <td>
+                      </td>
+                      <td>
+                        <i class="fa fa-check"></i>
+                        </td>
+                        <td>
+                          <i class="fa fa-check"></i>
+                          </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          ADVANCED METRICS                        
+                        </td>
+                        <td>
+                          </td>
+                          <td>
+                            </td>
+                            <td>
+                              <i class="fa fa-check"></i>
+                              </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              PHOTO DOWNLOADS                            
+                            </td>
+                            <td>
+                              </td>
+                              <td>
+                                </td>
+                                <td>
+                                  <i class="fa fa-check"></i>
+                                  </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  SEARCH ENGINE INDEXING                                
+                                </td>
+                                <td>
+                                  </td>
+                                  <td>
+                                    </td>
+                                    <td>
+                                      <i class="fa fa-check"></i>
+                                      </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                      CUSTOM ANALYTICS
+                                    </td>
+                                    <td>
+                                      </td>
+                                      <td>
+                                        </td>
+                                        <td>
+                                          <i class="fa fa-check"></i>
+                                          </td>
+                                      </tr>
+                                  </tbody>
+  </table>
+</div>
+</main>
 
-  Create a your stories, Photosnap is a platform for photographers and visual storytellers. 
-  It’s the simple way to create and share your photos.
-
-  Monthly
-  Yearly
-
-  Basic
-  Includes basic usage of our platform. Recommended for new and aspiring photographers.
-  $19.00 per month
-  $190.00 per year
-  Pick Plan
-
-  Pro
-  More advanced features available. Recommended for photography veterans and professionals.
-  $39.00 per month
-  $390.00 per year
-  Pick Plan
-
-  Business
-  Additional features available such as more detailed metrics. Recommended for business owners.
-  $99.00 per month
-  $990.00 per year
-  Pick Plan
-
-  Compare
-
-  The Features
-
-  Basic
-  Pro
-  Business
-
-  Unlimited Story Posting
-  Unlimited Photo Upload
-  Embedding Custom Content
-  Customize Metadata
-  Advanced Metrics
-  Photo Downloads
-  Search Engine Indexing
-  Custom Analytics
-
-  We're in Beta. Get your invite today!
-  
-  Get an invite
-
-  Home
-  Stories
-  Features
-  Pricing
-
-  Get an invite
-
-  Copyright 2019. All Rights Reserved
+<!-- footer -->
+<footer>
+  <div class="features-footer">
+    <div class="container"> 
+      <div class="features-footer-content">
+        <h3 class="features-footer-title">
+          We're in beta get your invite today.
+          </h3>
+          <button class="btn btn-primary features-button">
+            GET AN INVITE &nbsp; 
+            <span class="arrow"><img src="./assets/shared/desktop/arrow.svg" alt="arrow"></span>
+          </button>
+       </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="left-footer">
+      <div class="logo">
+        <h2 class="logo-title">
+          <a href="#">
+          Viewport
+          </a>
+        </h2 >
+      </div>
+      <nav>
+        <ul class="footer-nav">
+          <li class="footer-nav-item">
+            <a href="#">
+              Home
+            </a>
+          </li>
+          <li class="footer-nav-item">
+            <a href="#">
+              Stories
+            </a>
+          </li>
+          <li class="footer-nav-item">
+            <a href="#">
+              Features
+            </a>
+          </li>
+          <li class="footer-nav-item">
+            <a href="#">
+              Pricing
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <div class="social-media">
+        <!-- social media icons -->
+        <ul class="social-icons">
+          <li class="social-icon">
+            <a href="#">
+              <img src="./assets/shared/desktop/facebook.svg" alt="facebook">
+            </a>
+          </li>
+          <li class="social-icon">
+            <a href="#">
+              <img src="./assets/shared/desktop/twitter.svg" alt="twitter">
+            </a>
+          </li>
+          <li class="social-icon">
+            <a href="#">
+              <img src="./assets/shared/desktop/instagram.svg" alt="instagram">
+            </a>
+          </li>
+          <li class="social-icon">
+            <a href="#">
+              <img src="./assets/shared/desktop/pinterest.svg" alt="pinterest">
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- end left footer -->
+    <div class="right-footer">
+      <button class="btn btn-primary">
+        Get AN Invite <span class="arrow"><img src="./assets/shared/desktop/arrow.svg" alt="arrow"></span>
+      </button>
+      <!-- copy right -->
+      <div class="copyright">
+        <p>Copyright &copy; 2020 Viewport. All rights reserved.</p>
+      </div>
+  </div>
+</footer>
+<!-- script -->
+<script src=".js/app.js"></script>
 
 </body>
 </html>

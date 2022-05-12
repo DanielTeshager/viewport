@@ -121,6 +121,7 @@ main{
 .highlight .text-container .text-content{
     color: var(--basic-gray);
     font-size: .8rem;
+    width: 35ch;
 }
 .image-container{
     background-image: url('../assets/home/desktop/create-and-share.jpg');
@@ -169,7 +170,15 @@ main{
     grid-column: 1 / 5;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    min-height: 20rem;
+    min-height: 25rem;
+}
+.img-card-header span{
+    font-size: .8rem;
+    font-weight: 300;
+}
+.img-card-header h3{
+    font-family: 1.2rem;
+    font-weight: 300;
 }
 .img-card-content{
     background: linear-gradient(358deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 92%);
