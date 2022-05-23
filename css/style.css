@@ -315,3 +315,81 @@ footer .logo-title a{
     color: white;
     cursor: pointer;
 }
+
+
+/* Media query */
+
+/* Mobile */
+/* TABLETS PORTRAIT */
+@media only screen and (min-width: 320px) {
+  
+
+    main{
+        grid-template-columns: 1fr;
+    }
+    .header-content .nav-list{
+        display: none;
+    }
+    .header-content .btn-primary{
+        display: none;
+    }
+    .image-container{
+        grid-column: 1 / 2;
+    }
+    .highlight{
+        grid-row: 2 / 3;
+        grid-column:  1 / 2;
+    }
+    .sec-img{
+        grid-row: 3 / 4;
+        grid-column: 1 / 2;
+    }
+    .sec-text{
+        grid-column: 1 / 2;
+        grid-row: 4 / 5;
+    }
+    .third-img{
+        grid-column: 1 / 2;
+        grid-row: 5 / 6;
+    }
+
+    .third-text{
+        grid-column: 1 / 2;
+        grid-row: 6 / 7;
+    }
+    .img-cards{
+        grid-column: 1 / 2;
+        grid-template-columns: 1fr;
+    }
+    .features{
+        grid-column: 1 / 2;
+       
+    }
+    .features-cards{
+        grid-template-columns: 1fr;
+    }
+
+    footer{
+        grid-column: 1 / 2;
+        width: 100vw;
+    }
+    footer .container{
+        flex-direction: column;
+    }
+}
+
+
+/* TABLETS PORTRAIT */
+@media only screen and (min-width: 768px) {
+
+    main{
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+/* TABLET LANDSCAPE / DESKTOP */
+@media only screen and (min-width: 1024px) {
+
+}   
